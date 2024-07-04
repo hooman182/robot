@@ -1,6 +1,6 @@
 from flask import Flask, Response
 
-from app2 import run_by
+from myBot import run_by
 
 app = Flask(__name__)
 
