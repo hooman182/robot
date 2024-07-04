@@ -7,8 +7,10 @@ bs4==0.0.2
 certifi==2024.7.4
 charset-normalizer==3.3.2
 frozenlist==1.4.1
+gunicorn==22.0.0
 idna==3.7
 multidict==6.0.5
+packaging==24.1
 python-bale-bot==2.5.0
 requests==2.32.3
 setuptools==69.0.3
