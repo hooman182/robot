@@ -1,11 +1,15 @@
+from dotenv import load_dotenv
 import requests
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 from bale import Bot, Message
+import os 
 
 # Token for your Bale bot
 # TOKEN = '1244544145:mqHNLLxL2kFbP9qiCz6AcRp4ikxe9GQzMCMVvNLI'
-myToken = '2070467203:jaK15Gxse6kJ7FsEgb3AC9dfJ6hl5CIlM4wymjfQ'
+load_dotenv()
+myToken = os.environ.get('TOKEN')
+# myToken = "2070467203:jaK15Gxse6kJ7FsEgb3AC9dfJ6hl5CIlM4wymjfQ"
 bot = Bot(token=myToken)
 
 # Fixed base URL and keyword
@@ -72,4 +76,4 @@ def run_by():
     
 # Start the bot
 # if __name__ == "__main__":
-    # bot.run()
+#     bot.run()

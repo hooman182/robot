@@ -8,6 +8,6 @@ app = Flask(__name__)
 def index():
     return Response('hello')
 
+run_by()
 if __name__ == '__main__':
-    app.run()
-    run_by()
+    app.run(host='0.0.0.0', port=4000)
